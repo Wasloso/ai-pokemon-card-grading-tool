@@ -1,0 +1,22 @@
+[project]
+name = "ai-pokemon-card-grading-tool"
+version = "0.1.0"
+description = "Image-based geometry and condition inspection of collectible cards."
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.162.2",
+    "jinja2>=3.1.6",
+    "numpy>=2.5.4",
+    "opencv-python-headless>=5.0.0.93",
+    "pillow>=13.0.0",
+    "pydantic>=2.14.3",
+    "python-multipart>=0.0.33",
+    "uvicorn>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+]
